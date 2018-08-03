@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+import os
+Import('env')
+
+eglfs_lib = [
+    'godot_eglfs.cpp',
+    'os_eglfs.cpp',
+]
+
+prog = env.add_program('#bin/godot', eglfs_lib)
